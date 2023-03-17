@@ -6,7 +6,7 @@ class Album extends React.Component {
     return (
       <div data-testid="page-album">
         <Header />
-        <p>dentro da div de login</p>
+        <p>dentro da div de album</p>
       </div>
     );
   }
