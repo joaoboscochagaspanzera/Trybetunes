@@ -18,7 +18,7 @@ class AlbumCard extends React.Component {
         </Link>
         <p>{collectionName}</p>
         <p>{collectionPrice}</p>
-        <p>{albumImage}</p>
+        <img src={ albumImage } alt={ artistId } />
         <p>{releaseDate}</p>
         <p>{trackCount}</p>
       </div>
@@ -29,12 +29,12 @@ class AlbumCard extends React.Component {
 AlbumCard.propTypes = {
   artistName: PropTypes.string.isRequired,
   artistId: PropTypes.string.isRequired,
-  collectionId: PropTypes.string.isRequired,
+  collectionId: PropTypes.number.isRequired,
   collectionName: PropTypes.string.isRequired,
-  collectionPrice: PropTypes.string.isRequired,
+  collectionPrice: PropTypes.number.isRequired,
   albumImage: PropTypes.string.isRequired,
   releaseDate: PropTypes.string.isRequired,
-  trackCount: PropTypes.string.isRequired,
+  trackCount: PropTypes.number.isRequired,
 };
 
 export default AlbumCard;

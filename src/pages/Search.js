@@ -51,8 +51,6 @@ class search extends React.Component {
     const { artistName, isLoading, isRequested, lastArtist, albums } = this.state;
     const searchButton = artistName.length < MINARTISTNAME;
     const isAlbum = albums.length > 0;
-    console.log(albums);
-    console.log(albums.artistId);
     return (
       <div data-testid="page-search">
         <Header />
