@@ -22,10 +22,6 @@ class search extends React.Component {
     this.onInputChange = this.onInputChange.bind(this);
   }
 
-  // componentDidUpdate(prevProps, prevState) {
-  //   // console.log(prevState);
-  // }
-
   searchArtist = async () => {
     const { artistName } = this.state;
     this.setState({
